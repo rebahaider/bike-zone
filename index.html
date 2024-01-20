@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
      <!-- tailwind configuration link -->
      <script>
         tailwind.config = {
@@ -27,9 +31,7 @@
             font-family: 'Poppins', sans-serif;
     }
     </style>
-    <!-- daisy ui link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    
    
     <title>Document</title>
 </head>
@@ -266,11 +268,11 @@
         <section>
           <!-- FAQ section start -->
           <h1 class="text-6xl text-center mt-5 mb-5">Frequently Asked <span class="text-[#E76F51]">Questions</span></h1>
-          <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
-              <img src="images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row gap-28">
+              <img src="images/others/faq.png" class="w-1/2 lg:max-w-sm rounded-lg shadow-2xl" />
               <div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow">
                   <input type="radio" name="my-accordion-2" checked="checked" /> 
                   <div class="collapse-title text-xl font-medium">
                     What are the most important things I should know about riding a bike?
@@ -279,7 +281,7 @@
                     <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
                   </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow">
                   <input type="radio" name="my-accordion-2" /> 
                   <div class="collapse-title text-xl font-medium">
                     How can I tell if my helmet is old and I need a new one?
@@ -288,7 +290,7 @@
                     <p>hello</p>
                   </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow">
                   <input type="radio" name="my-accordion-2" /> 
                   <div class="collapse-title text-xl font-medium">
                     My bike has been in storage is it safe to ride?
@@ -297,7 +299,7 @@
                     <p>hello</p>
                   </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200">
+                <div class="collapse collapse-arrow">
                   <input type="radio" name="my-accordion-2" /> 
                   <div class="collapse-title text-xl font-medium">
                     What rules should I follow when riding my bike?
@@ -311,5 +313,32 @@
           </div>
         </section>
     </main>
+    <!-- footer section start -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside >
+        <div class="flex gap-5 text-base font-normal">
+          <p class="text-xl">Download Now</p>
+          <p class="text-xl">License</p>
+        </div>
+        <div>
+          <ul class="flex gap-6 text-base font-normal">
+            <li>About</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Careers</li>
+            <li>Help</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <p class="text-base font-normal">© 2020 bike. All rights reserved</p>
+      </aside> 
+      <nav>
+        <header class="footer-title text-[#D9DBE1]">Get the App</header> 
+        <div class="grid grid-cols-1 gap-4">
+          <a><img class="w-36" src="images/others/ios.png" alt="ios logo"></a>
+          <a><img class="w-36" src="images/others/android.png" alt="android logo"></a>
+        </div>
+      </nav>
+    </footer>
 </body>
 </html>
